@@ -12,7 +12,8 @@ magazine1 = Magazine.new("Magazine1", "Hikes")
 magazine2 = Magazine.new("Magazine2", "Hikes1")
 article1 = Article.new(author1, magazine1,"Title")
 article2 = Article.new(author1,magazine1,"Title2")
-author1.add_article(magazine1,"Title3")
+# author1.add_article(magazine1,"Title3") tring to add magazine and title to an author to form an article
+magazine1.article_titles
 
 
 

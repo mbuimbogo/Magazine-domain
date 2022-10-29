@@ -18,4 +18,13 @@ class Magazine
     @@all
   end
 
+  def self.find_by_name(name)
+ self.all.find do |magazine|
+ magazine.name == name
+ end
+end
+def article_titles
+  Article.all.map{|article| article.title}
+end
+
 end
