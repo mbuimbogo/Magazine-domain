@@ -1,4 +1,4 @@
 class Article
-    def initialize
-    end
+  def initialize(author, magazine, title)
+  end
 end
