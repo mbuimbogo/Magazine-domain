@@ -23,6 +23,12 @@ class Author
       Article.new(self,magazine,title)
     end
 
+    def topic_areas
+      magazines.collect do |magazine|
+        magazine.category.uniq
+      end
+    end
+
   end
 
 

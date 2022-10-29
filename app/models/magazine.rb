@@ -13,9 +13,7 @@ class Magazine
     article.magazine.name == @name}
     .map{|article|article.author}.uniq
   end
-
-
-
+ 
   def self.all
     @@all
   end
