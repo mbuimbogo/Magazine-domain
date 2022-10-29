@@ -12,6 +12,17 @@ class Author
     Article.all.select do |article|
       article.author == @name
     end
+
+    def magazines 
+      # get magazine instances from articles--articlles is a helper method
+      articles.map {|article|
+        article.magazine}.uniq
+    end
+
+    def add_article(magazine, title) 
+      Article.new(self,magazine,title)
+    end
+
   end
 
 
