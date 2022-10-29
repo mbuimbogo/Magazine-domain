@@ -19,7 +19,7 @@ class Author
         article.magazine}.uniq
     end
 
-    def add_article(magazine, title) 
+    def add_article(magazine, title)
       Article.new(self,magazine,title)
     end
 
