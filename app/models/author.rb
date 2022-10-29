@@ -7,5 +7,12 @@ class Author
   
   end
 
+  def articles
+    # get article for a particular author instance
+    Article.all.select do |article|
+      article.author == @name
+    end
+  end
+
 
 end
