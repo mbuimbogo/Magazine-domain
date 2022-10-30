@@ -27,4 +27,10 @@ def article_titles
   Article.all.map{|article| article.title}
 end
 
+def contributing_authors
+  #tally authors with more than two articles
+  # authors = Article.all.map{|article| article.author}.uniq
+
+end
+
 end
